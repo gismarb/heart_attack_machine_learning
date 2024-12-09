@@ -1,5 +1,5 @@
-# Engenharia e Administração de Banco de Dados CET 0611 - Mineração de Dados (2024)
-**Uso do KDD e Mineração de Dados para Prever Mortes por Doenças Cardíacas**
+# Engenharia e Administração de Banco de Dados CET 0621 - Aprendizado de Máquina na Análise de Dados (2024)
+**Uso do Aprendizado de Máquina para Prever Mortes por Doenças Cardíacas (em consutrução)**
 
 ------
 
@@ -37,7 +37,7 @@ Na pasta [DOC](https://github.com/gismarb/heart_attack_data_miner/tree/main/DOC)
 
 
 
-### Video
+### Video (remover)
 
 Como produto final deste projeto, temos o vídeo de apresentação, nas pasta [VIDEO](https://github.com/gismarb/heart_attack_data_miner/tree/main/VIDEO), ou direto para o canal do [Youtube](https://www.youtube.com/watch?v=ihjK3vraXPI).
 
@@ -46,6 +46,7 @@ Como produto final deste projeto, temos o vídeo de apresentação, nas pasta [V
 ### Integrantes do Grupo:
 
 - [Gismar Barbosa](https://www.linkedin.com/in/gismar/)
+- [Fabio Andrade](https://www.linkedin.com/in/fabio-andrade-93440594/)
 - [João Amazonas](https://www.linkedin.com/in/joao-amazonas/)
 - [Laís Gregório](https://www.linkedin.com/in/la%C3%ADs-fernanda-gregorio-8407451b7/)
 - [Thainnara Santos](https://www.linkedin.com/in/thainnara-santos-a41816162/)
