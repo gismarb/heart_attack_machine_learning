@@ -1,0 +1,62 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.Bagging -P 100 -S 1 -num-slots 1 -I 10 -W weka.classifiers.functions.MultilayerPerceptron -- -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H a
+Relation:     dataset03-weka.filters.unsupervised.attribute.Normalize-S1.0-T0.0-weka.filters.unsupervised.attribute.NominalToBinary-Rfirst-last
+Instances:    299
+Attributes:   21
+              age
+              anaemia=YES
+              creatinine_phosphokinase=NORMAL
+              diabetes=YES
+              ejection_fraction=LOW
+              ejection_fraction=NORMAL
+              ejection_fraction=HIGH
+              high_blood_pressure=NO
+              platelets=NORMAL
+              platelets=LOW
+              platelets=HIGH
+              serum_creatinine=HIGH
+              serum_creatinine=NORMAL
+              serum_creatinine=LOW
+              serum_sodium=LOW
+              serum_sodium=NORMAL
+              serum_sodium=HIGH
+              sex=F
+              smoking=YES
+              time
+              DEATH_EVENT
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Bagging with 10 iterations and base learner
+
+weka.classifiers.functions.MultilayerPerceptron -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H a
+
+Time taken to build model: 5.85 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         238               79.5987 %
+Incorrectly Classified Instances        61               20.4013 %
+Kappa statistic                          0.5229
+Mean absolute error                      0.2569
+Root mean squared error                  0.392 
+Relative absolute error                 58.8505 %
+Root relative squared error             83.9495 %
+Total Number of Instances              299     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.646    0.133    0.697      0.646    0.670      0.524    0.834     0.708     YES
+                 0.867    0.354    0.838      0.867    0.852      0.524    0.834     0.898     NO
+Weighted Avg.    0.796    0.283    0.793      0.796    0.794      0.524    0.834     0.837     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+  62  34 |   a = YES
+  27 176 |   b = NO
+

@@ -1,0 +1,54 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.Bagging -P 100 -S 1 -num-slots 1 -I 10 -W weka.classifiers.functions.MultilayerPerceptron -- -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H "20, 20"
+Relation:     heart_failure_clinical_records_dataset
+Instances:    299
+Attributes:   13
+              age
+              anaemia
+              creatinine_phosphokinase
+              diabetes
+              ejection_fraction
+              high_blood_pressure
+              platelets
+              serum_creatinine
+              serum_sodium
+              sex
+              smoking
+              time
+              DEATH_EVENT
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Bagging with 10 iterations and base learner
+
+weka.classifiers.functions.MultilayerPerceptron -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H "20, 20"
+
+Time taken to build model: 22.91 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         239               79.9331 %
+Incorrectly Classified Instances        60               20.0669 %
+Kappa statistic                          0.5294
+Mean absolute error                      0.2409
+Root mean squared error                  0.3984
+Relative absolute error                 55.1809 %
+Root relative squared error             85.3151 %
+Total Number of Instances              299     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.646    0.128    0.705      0.646    0.674      0.530    0.846     0.715     1
+                 0.872    0.354    0.839      0.872    0.855      0.530    0.846     0.917     0
+Weighted Avg.    0.799    0.282    0.796      0.799    0.797      0.530    0.846     0.852     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+  62  34 |   a = 1
+  26 177 |   b = 0
+

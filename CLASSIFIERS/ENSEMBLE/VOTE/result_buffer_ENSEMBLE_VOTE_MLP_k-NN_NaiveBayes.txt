@@ -1,0 +1,591 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.Vote -S 1 -B "weka.classifiers.bayes.NaiveBayes " -B "weka.classifiers.lazy.IBk -K 3 -W 0 -X -I -A \"weka.core.neighboursearch.LinearNNSearch -A \\\"weka.core.EuclideanDistance -R first-last\\\"\"" -B "weka.classifiers.functions.MultilayerPerceptron -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H \"10, 10\" -B -I" -R MAJ
+Relation:     dataset03-weka.filters.unsupervised.attribute.Normalize-S1.0-T0.0-weka.filters.unsupervised.attribute.NominalToBinary-Rfirst-last
+Instances:    299
+Attributes:   21
+              age
+              anaemia=YES
+              creatinine_phosphokinase=NORMAL
+              diabetes=YES
+              ejection_fraction=LOW
+              ejection_fraction=NORMAL
+              ejection_fraction=HIGH
+              high_blood_pressure=NO
+              platelets=NORMAL
+              platelets=LOW
+              platelets=HIGH
+              serum_creatinine=HIGH
+              serum_creatinine=NORMAL
+              serum_creatinine=LOW
+              serum_sodium=LOW
+              serum_sodium=NORMAL
+              serum_sodium=HIGH
+              sex=F
+              smoking=YES
+              time
+              DEATH_EVENT
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Vote combines the probability distributions of these base learners:
+	weka.classifiers.bayes.NaiveBayes 
+	weka.classifiers.lazy.IBk -K 3 -W 0 -X -I -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""
+	weka.classifiers.functions.MultilayerPerceptron -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H "10, 10" -B -I
+using the 'Majority Voting' combination rule 
+
+All the models:
+
+Naive Bayes Classifier
+
+                                    Class
+Attribute                             YES      NO
+                                   (0.32)  (0.68)
+==================================================
+age
+  mean                              0.4581  0.3416
+  std. dev.                         0.2385  0.1933
+  weight sum                            96     203
+  precision                         0.0217  0.0217
+
+anaemia=YES
+  mean                              0.4792  0.4089
+  std. dev.                         0.4996  0.4916
+  weight sum                            96     203
+  precision                              1       1
+
+creatinine_phosphokinase=NORMAL
+  mean                              0.0729  0.0542
+  std. dev.                           0.26  0.2264
+  weight sum                            96     203
+  precision                              1       1
+
+diabetes=YES
+  mean                              0.4167  0.4187
+  std. dev.                          0.493  0.4933
+  weight sum                            96     203
+  precision                              1       1
+
+ejection_fraction=LOW
+  mean                              0.7604  0.5369
+  std. dev.                         0.4268  0.4986
+  weight sum                            96     203
+  precision                              1       1
+
+ejection_fraction=NORMAL
+  mean                              0.1667  0.3202
+  std. dev.                         0.3727  0.4666
+  weight sum                            96     203
+  precision                              1       1
+
+ejection_fraction=HIGH
+  mean                              0.0729  0.1429
+  std. dev.                           0.26  0.3499
+  weight sum                            96     203
+  precision                              1       1
+
+high_blood_pressure=NO
+  mean                              0.5938  0.6749
+  std. dev.                         0.4911  0.4684
+  weight sum                            96     203
+  precision                              1       1
+
+platelets=NORMAL
+  mean                              0.8333  0.8818
+  std. dev.                         0.3727  0.3229
+  weight sum                            96     203
+  precision                              1       1
+
+platelets=LOW
+  mean                              0.1146  0.0788
+  std. dev.                         0.3185  0.2695
+  weight sum                            96     203
+  precision                              1       1
+
+platelets=HIGH
+  mean                              0.0521  0.0394
+  std. dev.                         0.2222  0.1946
+  weight sum                            96     203
+  precision                              1       1
+
+serum_creatinine=HIGH
+  mean                              0.5521  0.2611
+  std. dev.                         0.4973  0.4392
+  weight sum                            96     203
+  precision                              1       1
+
+serum_creatinine=NORMAL
+  mean                              0.4271  0.6601
+  std. dev.                         0.4947  0.4737
+  weight sum                            96     203
+  precision                              1       1
+
+serum_creatinine=LOW
+  mean                              0.0208  0.0788
+  std. dev.                         0.1667  0.2695
+  weight sum                            96     203
+  precision                              1       1
+
+serum_sodium=LOW
+  mean                              0.4375   0.202
+  std. dev.                         0.4961  0.4015
+  weight sum                            96     203
+  precision                              1       1
+
+serum_sodium=NORMAL
+  mean                              0.5521  0.7931
+  std. dev.                         0.4973  0.4051
+  weight sum                            96     203
+  precision                              1       1
+
+serum_sodium=HIGH
+  mean                              0.0104  0.0049
+  std. dev.                         0.1667  0.1667
+  weight sum                            96     203
+  precision                              1       1
+
+sex=F
+  mean                              0.3542  0.3498
+  std. dev.                         0.4783  0.4769
+  weight sum                            96     203
+  precision                              1       1
+
+smoking=YES
+  mean                              0.3125  0.3251
+  std. dev.                         0.4635  0.4684
+  weight sum                            96     203
+  precision                              1       1
+
+time
+  mean                              0.2381  0.5492
+  std. dev.                         0.2206  0.2407
+  weight sum                            96     203
+  precision                         0.0068  0.0068
+
+
+IB1 instance-based classifier
+using 3 inverse-distance-weighted nearest neighbour(s) for classification
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    7.2879916075755755
+    Node 12    -3.031113776714425
+    Node 13    -2.8683165252325304
+    Node 14    -2.6268054272428687
+    Node 15    -2.898941514624316
+    Node 16    -2.5119117211946227
+    Node 17    -3.0277687896363017
+    Node 18    -2.7068125896285262
+    Node 19    -2.716183802244466
+    Node 20    -2.644563625943198
+    Node 21    -3.018390363902386
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    -7.287102206515718
+    Node 12    3.0804373634937856
+    Node 13    2.8721553866666305
+    Node 14    2.6278530858110725
+    Node 15    2.8565475656149255
+    Node 16    2.52113010120868
+    Node 17    3.0395510752322914
+    Node 18    2.7219572372189584
+    Node 19    2.7217724394268608
+    Node 20    2.5977615907354332
+    Node 21    3.0055594654912356
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    -1.3626781026665262
+    Attrib age    -2.6362998523210956
+    Attrib anaemia=YES    0.6500689352725496
+    Attrib creatinine_phosphokinase=NORMAL    4.368207857783615
+    Attrib diabetes=YES    1.3332791150869714
+    Attrib ejection_fraction=LOW    -0.3826783138060401
+    Attrib ejection_fraction=NORMAL    0.4592985150956364
+    Attrib ejection_fraction=HIGH    -1.5091117363930366
+    Attrib high_blood_pressure=NO    0.5732763545536236
+    Attrib platelets=NORMAL    -1.443314476804917
+    Attrib platelets=LOW    0.6905272338109297
+    Attrib platelets=HIGH    -0.5717961974700186
+    Attrib serum_creatinine=HIGH    -4.14238457973376
+    Attrib serum_creatinine=NORMAL    3.4444348700005385
+    Attrib serum_creatinine=LOW    -0.6097932853679727
+    Attrib serum_sodium=LOW    0.3434244914993398
+    Attrib serum_sodium=NORMAL    -1.842875090502737
+    Attrib serum_sodium=HIGH    0.17236248519474312
+    Attrib sex=F    0.8902715489038961
+    Attrib smoking=YES    -1.1692303517915772
+    Attrib time    -9.077568879436868
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    0.06892349303099933
+    Attrib age    -0.519178582186099
+    Attrib anaemia=YES    3.8438089742487995
+    Attrib creatinine_phosphokinase=NORMAL    -0.04252656359065428
+    Attrib diabetes=YES    -4.1952615177917565
+    Attrib ejection_fraction=LOW    0.4310951563837117
+    Attrib ejection_fraction=NORMAL    -1.306373705632036
+    Attrib ejection_fraction=HIGH    0.9529300520733107
+    Attrib high_blood_pressure=NO    -3.870839242916207
+    Attrib platelets=NORMAL    -0.34576606054445974
+    Attrib platelets=LOW    1.0071186228197928
+    Attrib platelets=HIGH    -0.5129119902417757
+    Attrib serum_creatinine=HIGH    4.408930502157354
+    Attrib serum_creatinine=NORMAL    -3.2597130071214866
+    Attrib serum_creatinine=LOW    -1.1017637689158057
+    Attrib serum_sodium=LOW    3.339024716663584
+    Attrib serum_sodium=NORMAL    -3.289808277325893
+    Attrib serum_sodium=HIGH    0.06937849210831946
+    Attrib sex=F    -4.838590004968026
+    Attrib smoking=YES    -1.9126731691775052
+    Attrib time    0.678443405534859
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    -3.0083298138829186
+    Attrib age    3.9450490448149216
+    Attrib anaemia=YES    3.926735766530012
+    Attrib creatinine_phosphokinase=NORMAL    0.052166094419851
+    Attrib diabetes=YES    -2.1442693152353955
+    Attrib ejection_fraction=LOW    -1.9938879399024572
+    Attrib ejection_fraction=NORMAL    -2.8264702274785587
+    Attrib ejection_fraction=HIGH    1.8367967185752525
+    Attrib high_blood_pressure=NO    3.2107696104844257
+    Attrib platelets=NORMAL    -1.1893493166299605
+    Attrib platelets=LOW    1.2729705927287303
+    Attrib platelets=HIGH    -3.044827261672701
+    Attrib serum_creatinine=HIGH    -2.193377273311821
+    Attrib serum_creatinine=NORMAL    0.07982992591580768
+    Attrib serum_creatinine=LOW    -0.963457414958007
+    Attrib serum_sodium=LOW    -1.1319543266442376
+    Attrib serum_sodium=NORMAL    -2.0761850304779084
+    Attrib serum_sodium=HIGH    0.18482616831648793
+    Attrib sex=F    1.7792023504207772
+    Attrib smoking=YES    0.6539649670293141
+    Attrib time    -7.074319430287455
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    -1.376846633261919
+    Attrib age    3.2534501121024935
+    Attrib anaemia=YES    -0.19277771205581484
+    Attrib creatinine_phosphokinase=NORMAL    -3.087967010868386
+    Attrib diabetes=YES    0.9140713638340023
+    Attrib ejection_fraction=LOW    1.1746072169051491
+    Attrib ejection_fraction=NORMAL    1.0653160151202552
+    Attrib ejection_fraction=HIGH    -3.5489453309368044
+    Attrib high_blood_pressure=NO    -3.735669912943212
+    Attrib platelets=NORMAL    -0.36018006875164293
+    Attrib platelets=LOW    -2.6081121060940777
+    Attrib platelets=HIGH    1.677310075186428
+    Attrib serum_creatinine=HIGH    -0.11581198042953582
+    Attrib serum_creatinine=NORMAL    0.6141419638018287
+    Attrib serum_creatinine=LOW    -1.8385295355234108
+    Attrib serum_sodium=LOW    -3.3353821988415215
+    Attrib serum_sodium=NORMAL    1.758559769414251
+    Attrib serum_sodium=HIGH    0.1949427249057621
+    Attrib sex=F    -3.3960668997967045
+    Attrib smoking=YES    2.8940202063787424
+    Attrib time    -14.046636805173591
+Sigmoid Node 6
+    Inputs    Weights
+    Threshold    -3.319727208131236
+    Attrib age    7.56305676763321
+    Attrib anaemia=YES    1.9134638275716227
+    Attrib creatinine_phosphokinase=NORMAL    -1.578803972187788
+    Attrib diabetes=YES    -0.748404286265156
+    Attrib ejection_fraction=LOW    -0.2383413074334421
+    Attrib ejection_fraction=NORMAL    -2.2961365078502465
+    Attrib ejection_fraction=HIGH    -0.7551634111318034
+    Attrib high_blood_pressure=NO    1.8908804379344313
+    Attrib platelets=NORMAL    -1.058725780826783
+    Attrib platelets=LOW    -0.6644408298141861
+    Attrib platelets=HIGH    -1.6692722518909664
+    Attrib serum_creatinine=HIGH    -2.3778493696830703
+    Attrib serum_creatinine=NORMAL    0.6602479718275396
+    Attrib serum_creatinine=LOW    -1.5496354982813445
+    Attrib serum_sodium=LOW    0.43598614214466586
+    Attrib serum_sodium=NORMAL    -3.8805971388239726
+    Attrib serum_sodium=HIGH    0.1433595225352232
+    Attrib sex=F    2.5223611395562533
+    Attrib smoking=YES    0.46966158844297046
+    Attrib time    -11.227148923616856
+Sigmoid Node 7
+    Inputs    Weights
+    Threshold    -0.22031020012251065
+    Attrib age    2.1529242610966697
+    Attrib anaemia=YES    -4.151964379360271
+    Attrib creatinine_phosphokinase=NORMAL    -1.8237205404154535
+    Attrib diabetes=YES    -2.3034665787338753
+    Attrib ejection_fraction=LOW    -0.04997282445825441
+    Attrib ejection_fraction=NORMAL    1.2725746826728244
+    Attrib ejection_fraction=HIGH    -1.4354869970134714
+    Attrib high_blood_pressure=NO    -2.168062038295059
+    Attrib platelets=NORMAL    -2.5258499831049295
+    Attrib platelets=LOW    2.7430446528918977
+    Attrib platelets=HIGH    -0.4914597265149547
+    Attrib serum_creatinine=HIGH    2.8984020254394274
+    Attrib serum_creatinine=NORMAL    -2.4821501105795627
+    Attrib serum_creatinine=LOW    -0.6044646969923538
+    Attrib serum_sodium=LOW    -0.20397599688673873
+    Attrib serum_sodium=NORMAL    -0.11978067986402838
+    Attrib serum_sodium=HIGH    0.1732019238060931
+    Attrib sex=F    2.1373318446990197
+    Attrib smoking=YES    -0.1920979641055078
+    Attrib time    -4.497637049779525
+Sigmoid Node 8
+    Inputs    Weights
+    Threshold    -2.4005420117090095
+    Attrib age    -0.3956028120069834
+    Attrib anaemia=YES    -3.349779760803406
+    Attrib creatinine_phosphokinase=NORMAL    -0.12539999716768405
+    Attrib diabetes=YES    0.5367889344040304
+    Attrib ejection_fraction=LOW    0.9266002580076613
+    Attrib ejection_fraction=NORMAL    -2.1220873943618654
+    Attrib ejection_fraction=HIGH    -1.2208800433217797
+    Attrib high_blood_pressure=NO    3.3543321427828894
+    Attrib platelets=NORMAL    -1.9164607293241558
+    Attrib platelets=LOW    0.4616309872776249
+    Attrib platelets=HIGH    -0.9893333827788222
+    Attrib serum_creatinine=HIGH    -2.0533655659994365
+    Attrib serum_creatinine=NORMAL    0.49136190220870235
+    Attrib serum_creatinine=LOW    -0.7888527687593729
+    Attrib serum_sodium=LOW    -1.2065163095694322
+    Attrib serum_sodium=NORMAL    -1.2901157125140306
+    Attrib serum_sodium=HIGH    0.14152545605346697
+    Attrib sex=F    5.025327609508238
+    Attrib smoking=YES    -2.5714027427544175
+    Attrib time    -2.5683203014146625
+Sigmoid Node 9
+    Inputs    Weights
+    Threshold    -1.6110482075718393
+    Attrib age    8.66806775419003
+    Attrib anaemia=YES    -6.062588409084427
+    Attrib creatinine_phosphokinase=NORMAL    -0.1786847728031469
+    Attrib diabetes=YES    -4.376175542250014
+    Attrib ejection_fraction=LOW    0.04261511560463711
+    Attrib ejection_fraction=NORMAL    -2.3942027062976865
+    Attrib ejection_fraction=HIGH    0.7140167132914487
+    Attrib high_blood_pressure=NO    -0.005261053814659016
+    Attrib platelets=NORMAL    -1.5645255654530614
+    Attrib platelets=LOW    -0.09660862008928753
+    Attrib platelets=HIGH    0.01857515139730819
+    Attrib serum_creatinine=HIGH    1.6339885747073013
+    Attrib serum_creatinine=NORMAL    -2.2701664326521938
+    Attrib serum_creatinine=LOW    -1.054560634583153
+    Attrib serum_sodium=LOW    2.0849770821563602
+    Attrib serum_sodium=NORMAL    -3.896705437475519
+    Attrib serum_sodium=HIGH    0.10337316643736225
+    Attrib sex=F    -5.022043418041387
+    Attrib smoking=YES    1.1882465167493814
+    Attrib time    -4.241035664548882
+Sigmoid Node 10
+    Inputs    Weights
+    Threshold    -0.3601370526634575
+    Attrib age    2.1033319413646394
+    Attrib anaemia=YES    -2.3682852312367824
+    Attrib creatinine_phosphokinase=NORMAL    -0.2067975322569571
+    Attrib diabetes=YES    -3.294984681736479
+    Attrib ejection_fraction=LOW    1.1289414606176484
+    Attrib ejection_fraction=NORMAL    -0.7650917085873321
+    Attrib ejection_fraction=HIGH    -0.6318741263344906
+    Attrib high_blood_pressure=NO    -0.42325885922175593
+    Attrib platelets=NORMAL    -0.5858909716271693
+    Attrib platelets=LOW    1.2151586027879837
+    Attrib platelets=HIGH    -0.8658236622340982
+    Attrib serum_creatinine=HIGH    -0.32963874811876726
+    Attrib serum_creatinine=NORMAL    0.7915549814891871
+    Attrib serum_creatinine=LOW    -0.7221359386381537
+    Attrib serum_sodium=LOW    0.24547019671558595
+    Attrib serum_sodium=NORMAL    -0.7415579106835782
+    Attrib serum_sodium=HIGH    0.10714691648549853
+    Attrib sex=F    -0.04259335467699334
+    Attrib smoking=YES    -2.2705743737461486
+    Attrib time    -4.714993786122936
+Sigmoid Node 11
+    Inputs    Weights
+    Threshold    -3.2681006019716055
+    Attrib age    -2.621581777886972
+    Attrib anaemia=YES    3.2751704296775803
+    Attrib creatinine_phosphokinase=NORMAL    6.528894207289021
+    Attrib diabetes=YES    6.366039651441362
+    Attrib ejection_fraction=LOW    1.204887351963336
+    Attrib ejection_fraction=NORMAL    -4.695599855904277
+    Attrib ejection_fraction=HIGH    0.13182111094974336
+    Attrib high_blood_pressure=NO    -1.56552103696697
+    Attrib platelets=NORMAL    1.0115563818867739
+    Attrib platelets=LOW    -1.719893709423078
+    Attrib platelets=HIGH    -2.5287047562629468
+    Attrib serum_creatinine=HIGH    3.324216919399342
+    Attrib serum_creatinine=NORMAL    -5.4709110620668495
+    Attrib serum_creatinine=LOW    -1.0342476398804274
+    Attrib serum_sodium=LOW    -3.3974086550178186
+    Attrib serum_sodium=NORMAL    0.08715113796163595
+    Attrib serum_sodium=HIGH    0.11257929939701716
+    Attrib sex=F    1.3271548038530363
+    Attrib smoking=YES    -5.328036633177223
+    Attrib time    -7.152717410787272
+Sigmoid Node 12
+    Inputs    Weights
+    Threshold    1.7121004740670709
+    Node 2    -2.1596546759526047
+    Node 3    -2.0344784352666867
+    Node 4    -1.8390205147557672
+    Node 5    -3.7502660343047305
+    Node 6    -2.565244709426809
+    Node 7    -2.5981234132936795
+    Node 8    -1.1800438724189783
+    Node 9    -1.9430002058523632
+    Node 10    -1.3579376267822614
+    Node 11    -2.1415308361705354
+Sigmoid Node 13
+    Inputs    Weights
+    Threshold    1.3715656588660146
+    Node 2    -2.007622898447043
+    Node 3    -1.6929964507666138
+    Node 4    -1.6790058200222544
+    Node 5    -3.452254215392029
+    Node 6    -2.3569334113867844
+    Node 7    -2.438045466044787
+    Node 8    -0.9673164837681824
+    Node 9    -1.8290074553755502
+    Node 10    -1.294373672290437
+    Node 11    -2.211583194178216
+Sigmoid Node 14
+    Inputs    Weights
+    Threshold    1.17694887855002
+    Node 2    -1.8560143301581276
+    Node 3    -1.6272428588659258
+    Node 4    -1.4941392456114202
+    Node 5    -3.2410024033325193
+    Node 6    -2.1603223549251664
+    Node 7    -2.25866200162792
+    Node 8    -1.020350182386529
+    Node 9    -1.6317996140610411
+    Node 10    -1.1906561009668755
+    Node 11    -1.874576666425459
+Sigmoid Node 15
+    Inputs    Weights
+    Threshold    1.47476880103569
+    Node 2    -2.0390159058849266
+    Node 3    -1.8475891704452025
+    Node 4    -1.7171869404589042
+    Node 5    -3.5401515234117813
+    Node 6    -2.358938823190082
+    Node 7    -2.4828587438105023
+    Node 8    -1.1057737801142073
+    Node 9    -1.8085805512891706
+    Node 10    -1.2714491991044674
+    Node 11    -2.0458253482475426
+Sigmoid Node 16
+    Inputs    Weights
+    Threshold    1.0211635323898407
+    Node 2    -1.8073731041928063
+    Node 3    -1.4980634316689818
+    Node 4    -1.3575097936574672
+    Node 5    -3.0985814634627062
+    Node 6    -2.0539531746220216
+    Node 7    -2.175544125209553
+    Node 8    -0.9105980615877236
+    Node 9    -1.5571486511216313
+    Node 10    -1.1423303338290036
+    Node 11    -1.833951282859017
+Sigmoid Node 17
+    Inputs    Weights
+    Threshold    1.5910039721914915
+    Node 2    -2.1288137695132443
+    Node 3    -1.8955559618531546
+    Node 4    -1.803581875889776
+    Node 5    -3.671141386098572
+    Node 6    -2.5309386779890204
+    Node 7    -2.563495034913325
+    Node 8    -1.0686141664410254
+    Node 9    -1.9663482429021049
+    Node 10    -1.33033336706115
+    Node 11    -2.2651448239245147
+Sigmoid Node 18
+    Inputs    Weights
+    Threshold    1.2898533389840372
+    Node 2    -1.9233056707354796
+    Node 3    -1.7318073014833655
+    Node 4    -1.595729303990379
+    Node 5    -3.3566874177952575
+    Node 6    -2.2242404269542506
+    Node 7    -2.3085897635246253
+    Node 8    -1.0366248369087803
+    Node 9    -1.7265459062725523
+    Node 10    -1.2204048552312006
+    Node 11    -1.918690049103397
+Sigmoid Node 19
+    Inputs    Weights
+    Threshold    1.2464841951709351
+    Node 2    -1.9244179159536106
+    Node 3    -1.6469853198222781
+    Node 4    -1.5823905642247742
+    Node 5    -3.326481882958171
+    Node 6    -2.203091895282061
+    Node 7    -2.322843703501757
+    Node 8    -1.0004947805683102
+    Node 9    -1.7220178466721394
+    Node 10    -1.2013951310256947
+    Node 11    -2.0068880839392818
+Sigmoid Node 20
+    Inputs    Weights
+    Threshold    1.189158134938243
+    Node 2    -1.890827781641679
+    Node 3    -1.6642566471473612
+    Node 4    -1.505894267868647
+    Node 5    -3.2576576042874787
+    Node 6    -2.1129768344773714
+    Node 7    -2.2563640388174564
+    Node 8    -1.0438032711126966
+    Node 9    -1.6233033714507001
+    Node 10    -1.1645506015038645
+    Node 11    -1.8255169657092314
+Sigmoid Node 21
+    Inputs    Weights
+    Threshold    1.5461979207999446
+    Node 2    -2.1233422511525317
+    Node 3    -1.861197916770776
+    Node 4    -1.8338666973841502
+    Node 5    -3.6433970739155397
+    Node 6    -2.4483906723723647
+    Node 7    -2.556466247851628
+    Node 8    -1.0343079514106355
+    Node 9    -1.9265771898846138
+    Node 10    -1.32966098918662
+    Node 11    -2.274530243262168
+Class YES
+    Input
+    Node 0
+Class NO
+    Input
+    Node 1
+
+
+
+Time taken to build model: 1.24 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         242               80.9365 %
+Incorrectly Classified Instances        57               19.0635 %
+Kappa statistic                          0.5333
+Mean absolute error                      0.1906
+Root mean squared error                  0.4366
+Relative absolute error                 43.6745 %
+Root relative squared error             93.5046 %
+Total Number of Instances              299     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.583    0.084    0.767      0.583    0.663      0.543    0.750     0.581     YES
+                 0.916    0.417    0.823      0.916    0.867      0.543    0.750     0.811     NO
+Weighted Avg.    0.809    0.310    0.805      0.809    0.802      0.543    0.750     0.737     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+  56  40 |   a = YES
+  17 186 |   b = NO
+

@@ -1,0 +1,54 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.lazy.IBk -K 3 -W 0 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""
+Relation:     heart_failure_clinical_records_dataset
+Instances:    299
+Attributes:   13
+              age
+              anaemia
+              creatinine_phosphokinase
+              diabetes
+              ejection_fraction
+              high_blood_pressure
+              platelets
+              serum_creatinine
+              serum_sodium
+              sex
+              smoking
+              time
+              DEATH_EVENT
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+IB1 instance-based classifier
+using 3 nearest neighbour(s) for classification
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         213               71.2375 %
+Incorrectly Classified Instances        86               28.7625 %
+Kappa statistic                          0.2401
+Mean absolute error                      0.3438
+Root mean squared error                  0.4782
+Relative absolute error                 78.7539 %
+Root relative squared error            102.3993 %
+Total Number of Instances              299     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.302    0.094    0.604      0.302    0.403      0.265    0.626     0.464     1
+                 0.906    0.698    0.733      0.906    0.811      0.265    0.626     0.739     0
+Weighted Avg.    0.712    0.504    0.692      0.712    0.680      0.265    0.626     0.651     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+  29  67 |   a = 1
+  19 184 |   b = 0
+

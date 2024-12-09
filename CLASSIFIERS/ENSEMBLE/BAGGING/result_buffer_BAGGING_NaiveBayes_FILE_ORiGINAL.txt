@@ -1,0 +1,54 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.Bagging -P 100 -S 1 -num-slots 1 -I 10 -W weka.classifiers.bayes.NaiveBayes
+Relation:     heart_failure_clinical_records_dataset
+Instances:    299
+Attributes:   13
+              age
+              anaemia
+              creatinine_phosphokinase
+              diabetes
+              ejection_fraction
+              high_blood_pressure
+              platelets
+              serum_creatinine
+              serum_sodium
+              sex
+              smoking
+              time
+              DEATH_EVENT
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Bagging with 10 iterations and base learner
+
+weka.classifiers.bayes.NaiveBayes 
+
+Time taken to build model: 0.01 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         230               76.9231 %
+Incorrectly Classified Instances        69               23.0769 %
+Kappa statistic                          0.4179
+Mean absolute error                      0.2535
+Root mean squared error                  0.3984
+Relative absolute error                 58.0854 %
+Root relative squared error             85.323  %
+Total Number of Instances              299     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.469    0.089    0.714      0.469    0.566      0.435    0.857     0.684     1
+                 0.911    0.531    0.784      0.911    0.843      0.435    0.857     0.929     0
+Weighted Avg.    0.769    0.389    0.762      0.769    0.754      0.435    0.857     0.851     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+  45  51 |   a = 1
+  18 185 |   b = 0
+
