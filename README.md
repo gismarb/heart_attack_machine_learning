@@ -1,5 +1,5 @@
 # Engenharia e Administração de Banco de Dados CET 0621 - Aprendizado de Máquina na Análise de Dados (2024)
-**Uso do Aprendizado de Máquina para Prever Mortes por Doenças Cardíacas (em consutrução)**
+**Uso do Aprendizado de Máquina para Prever Mortes por Doenças Cardíacas**
 
 ------
 
@@ -7,15 +7,15 @@
 
 ### Introdução
 
-Este repositório destina-se como acervo para os artefatos do Projeto de Mineração de dados executado no curso de Especialização em Engenharia e Administração de Banco de Dados. O objetivo é, utilizando o KDD, sobretudo, nas fases de pré-processamento e mineração de dados, predizer mortes por problemas cardíacos. Para esse projeto estamos utilizando um dataset composto por 12 váriáveis que possuem correlação com problemas cardíacos. Ao final, de toda análise, apresentamos os resultados discritivos.
+Este repositório destina-se como acervo para os artefatos do Projeto de Aprendizado de Máquina executado no curso de Especialização em Engenharia e Administração de Banco de Dados. O objetivo é, utilizando classificadores NaÍve Bayes; k-NN; MLP e Ensembles (Bagging e Vote), predizer mortes por problemas cardíacos. Para esse projeto estamos utilizando um dataset composto por 12 váriáveis que possuem correlação com problemas cardíacos. Ao final, de toda análise, apresentamos os resultados discritivos.
 
-> ***Tags:** KDD; minerção de dados; SQL; Excel; CSV; banco de dados; Weka; J48.*
+> ***Tags:** KDD; NaÍve Bayes; k-NN; MLP e Ensembles (Bagging e Vote); Weka.*
 
 
 
 ### Dataset
 
-Para esse trabalho, utilizamos um dataset original e, derivando desse primeiro, geramos outros 2 datasets. Esses dataset podem ser encontrados na pasta [DATASET](https://github.com/gismarb/heart_attack_data_miner/tree/main/DATASET). Nessa pasta, é possível encontrar os 3 dataset nos formatos: SQL, CSV e ARFF.
+Para esse trabalho, utilizamos um dataset original e, derivando desse primeiro, geramos outros 2 datasets. Esses dataset podem ser encontrados na pasta [DATASET](https://github.com/gismarb/heart_attack_machine_learning/tree/main/DATASET). Nessa pasta, é possível encontrar os 3 dataset nos formatos: SQL, CSV e ARFF.
 
 
 
