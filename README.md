@@ -37,6 +37,12 @@ Na pasta [DOC](https://github.com/gismarb/heart_attack_machine_learning/tree/mai
 
 
 
+### Classificadores
+
+Na pasta [CLASSIFIERS](https://github.com/gismarb/heart_attack_machine_learning/tree/main/CLASSIFIERS), podem ser encontrados os resultados obtidos a partir dos experimentos com o Weka - "result_buffer", contendo classificadores; parâmetros utilizados e os resultados estatísticos e de performance.
+
+
+
 ### Integrantes do Grupo:
 
 - [Gismar Barbosa](https://www.linkedin.com/in/gismar/)
