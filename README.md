@@ -27,19 +27,13 @@ O processamento  e classificação dos dados, geram artefatos de imagem, que pod
 
 ### Scripts
 
-Para realização dos tratamentos de dados, utilizamos uma estrutura de script SQL, que podem ser encontrados na pasta [SCRIPT](https://github.com/gismarb/heart_attack_data_miner/tree/main/SCRIPT). Nessa estrutura, são aplicados, de maneira colunar, os tratamentos de discretização e regrade indicadores de exames para as variáveis contínuas e binárias.
+Para realização dos tratamentos de dados, utilizamos uma estrutura de script SQL, que podem ser encontrados na pasta [SCRIPT](https://github.com/gismarb/heart_attack_machine_learning/tree/main/SCRIPT). Nessa estrutura, são aplicados, de maneira colunar, os tratamentos de discretização e regrade indicadores de exames para as variáveis contínuas e binárias.
 
 
 
 ### Documentos
 
-Na pasta [DOC](https://github.com/gismarb/heart_attack_data_miner/tree/main/DOC), podem ser encontrados os artefatos de documentos dos mais diversos formatos (docx; pdf; ppt; xlsx). Inclusive, o relatório final do projeto está disponível nesta pasta (e documentos auxiliáres também, como a apresentação utilizada para formentar o vídeo final).
-
-
-
-### Video (remover)
-
-Como produto final deste projeto, temos o vídeo de apresentação, nas pasta [VIDEO](https://github.com/gismarb/heart_attack_data_miner/tree/main/VIDEO), ou direto para o canal do [Youtube](https://www.youtube.com/watch?v=ihjK3vraXPI).
+Na pasta [DOC](https://github.com/gismarb/heart_attack_machine_learning/tree/main/DOC), podem ser encontrados os artefatos de documentos dos mais diversos formatos (docx; pdf; xlsx etc.). Inclusive, o relatório final do projeto está disponível nesta pasta (e documentos auxiliáres também).
 
 
 
